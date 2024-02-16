@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.R. TECH</title>
+
+    <!-- Bootstrap Library Here-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+
+     <!-- CSS Here -->
+     <style>
+        /* IA1 */
+        .container-company{
+            background-color: gray;
+            height:350px;
+        }
+
+        .container-company h2{  
+            font-size: 60px;
+            color:yellow;
+            font-family:Arial, Helvetica, sans-serif;
+            padding:10px;
+            padding-top: 60px;
+            text-shadow: 5px 5px 5px black;
+
+        } 
+        
+        .container-company p{
+            font-size: 30px;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding:10px;
+         }
+
+         .container-company button{
+            font-size: 20px;
+            color: yellowgreen;
+            background-color: antiquewhite;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding:10px;
+
+            width:350px;
+            border:6px solid black;
+         }
+
+         /* reponsive web design - smartphone */
+
+         @media only screen and (max-width:600px){
+            .container-company h2{  
+            font-size: 50px;
+            
+             } 
+        
+        .container-company p{
+            font-size: 30px;
+          
+            }
+         }
+
+        /* IA2 */
+        .product{
+            width: 300px;
+            height: 300px;
+            border: 5px solid darkgray;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 10px;
+        }
+        .container-product{
+            background-color: beige;
+            padding: 20px;
+        }
+        .container-product h2{
+            font-size: 50px;
+            color: #57a6a6;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container-product p{
+            font-size: 25px;
+            color: brown;
+            font-weight: light;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: lightgray;
+            box-shadow: 5px 5px 5px black;
+        }
+        .container-product button{
+            font-size: 30px;
+            color: white;
+            background-color: gray;
+            width: 300px;
+        }
+        /* IA3 */
+        .container-team{
+            background-color: rgb(81, 119, 243);
+            padding: 20px;
+
+        }
+
+        .member{
+            width: 300px;
+            height: 300px;
+            border-radius: 50% ;
+            border: 10px solid rgb(42, 240, 250);   
+        }
+
+        .box{
+            background-color: rgb(163, 182, 243);
+            padding: 20px;
+            border: 5px solid black;
+            border-radius: 20px;
+
+        } 
+        .container-team h2{
+            color: aqua;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }  
+
+        .container-team h3{
+            color: rgb(32, 160, 160);
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px;
+        }  
+
+        .container-team p{
+            color: rgb(32, 160, 160);
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px;
+        }  
+
+        .box:hover{
+            background-color: aquamarine;
+            box-shadow: 10px 10px 10px black;
+            transition: 1s;
+        }
+        /* IA4 */
+        .container-feature{
+          background-color: hsl(180, 100%, 50%);
+          padding:5px;
+        }
+    
+        .container-feature h2{
+          color: black;
+          font-size: 40px;
+          font-weight: bold;
+          font-family: 'Courier New', Courier, monospace;
+          margin: 25px;
+        }
+        .search{
+            width: 80%;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: rgb(182, 243, 243);
+            border: 3px solid black;
+            margin-bottom: 30px;
+
+            /* move search bar to center */
+
+            display: block;
+            margin-left: auto ;
+            margin-right: auto;
+        }
+
+        table, th, td{
+            border: 2px solid black;
+            height: 70px;
+
+        }
+
+        th{
+          background-color: rgb(103, 183, 214);
+          color: rgb(81, 81, 71);
+          font-size: 25px;
+          text-align: center;
+        }
+
+        td{
+          color: rgb(14, 99, 246);
+          font-size: 15px;
+          text-align: center;
+        }
+        tr:hover{
+          background-color: aquamarine;
+          color: blue;
+          transition: 1s;
+        }
+
+        td:hover{
+          color: rgb(187, 66, 66);
+        }
+        /* IA5 */
+        .slide-pic{
+        width:100%
+        height:400px;
+      }
+
+      .container-smart h2{
+        background-color: rgb(177, 210, 236);
+        color: rgb(28, 26, 26);
+        font-size: 30px;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+         
+      .carousel-control-prev-icon{
+        background-color: gray;
+        width: 50px;
+        height: 50px;
+        color: rgb(56, 74, 234);
+      }
+
+      .carousel-control-next-icon{
+        background-color: gray;
+        width: 50px;
+        height: 50px;
+        color: rgb(59, 31, 160);
+      }
+      .carousel-indicators [data-bs-target]{
+        background-color: rgb(0, 166, 255);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+        /* IA6 */
+        .container-customer{
+            background-color: aquamarine;
+            padding:40px;
+        }
+
+        .customer{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 10px solid black;
+
+        }
+
+        .container-customer h2{
+            font-size: 40px;
+            margin: 10px;
+            color: gray;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .nav-link{
+            color: blue;
+            font-size: 30px;
+        }
+
+
+        .nav-tabs .nav-link{
+            background-color: beige;
+            border: solid;
+        }
+
+        .nav-tabs .nav-link:focus{
+            color: gray;
+            background-color: yellow;
+        }
+
+        .container-customer h3{
+            font-size: 30px;
+            margin: 10px;
+            color: gray;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .container-customer p{
+            font-size: 20px;
+            margin: 10px;
+            color: black;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /* IA7 */
+        .order{
+            width:300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 8px solid gray;
+        }
+
+        .container-order{
+
+            padding: 40px;
+            background-color: lightgray;
+
+        }
+
+        .container-order h2{
+            font-size: 50px;
+            color: rgb(23, 26, 26);
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container-order p{
+            font-size: 30px;
+            color: rgb(91, 50, 205);
+            font-weight: light;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container-order button{
+            font-size: 30px;
+            color: rgb(22, 23, 23);
+            background-color: aquamarine;
+            width: 60%;
+        }
+
+        .container-order button:hover{
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(24, 112, 83);
+            width: 60%;
+        }
+
+        .modal-content{
+            background-color: rgb(17, 168, 168);
+            font-size: 25px;
+            color: black;
+        }
+
+        .modal-dialog{
+            width: 400px;
+        }
+
+        .modal-footer button{
+            width: 100%;
+            color: beige;
+            background-color: black;
+            font-size: 30px;
+        }
+
+        .modal-header h3{
+            color: black;
+            font-size: 30px;
+            font-family: cursive;
+        }
+        /* IA8 */
+        .container-contact{
+            background-color: rgb(230, 218, 218);
+            padding: 40px;
+        }
+        .container-contact h2{
+            font-size: 40px;
+            color: rgb(56, 49, 198);
+            font-family: cursive;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .container-contact p{
+            font-size: 15px;
+            color: rgb(30, 31, 32);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container-contact input{
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: blue;
+            background-color: antiquewhite;
+        }
+        .container-contact textarea{
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: blue;
+            background-color: antiquewhite;
+        }
+        .container-contact label{
+            margin-bottom: 10px;
+            font-size:15px;
+            color: blue;
+        }
+        .container-contact input[type="checkbox"]{
+            transform: scale(1);
+            margin: 5px;
+            
+        }
+        .container-contact input[type="radio"]{
+            transform: scale(1);
+            margin: 5px;
+           
+        }
+        .container-contact .btn-primary{
+            margin: 20px;
+            font-size: 30px;
+        }
+
+        /* IA9 */
+        .navbar{
+            background-color: rgb(108, 103, 103);
+            font-size: 20px;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            opacity: 0.8;
+            z-index: 10;
+        }
+        .navbar li a{
+            color: white;
+            font-size: 25px;
+            padding: 10px;
+            text-decoration: none;
+        }    
+        .navbar li a:hover{
+            color: blue;
+            background-color: black;
+            transition: 1s;
+            padding: 13px;
+        }   
+        .navbar-brand{
+            color: aquamarine;
+            font-size: 25px;
+            font-family: cursive;
+            font-weight: bold;
+        } 
+        .navbar-toggler{
+            color: aqua;
+            background-color: gray;
+        }
+
+        footer{
+            background-color: lightyellow;
+            padding: 50px;
+        }
+
+        footer p{
+            font-size: 25px;
+            color: gray;
+            padding: 20px;
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+     </style>
+     
+     <!-- JavaScript-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+      
+     </script>
+
+     <script>
+
+        // IA1
+        function welcomeMsg(){
+
+alert ("Welcome to M.R. Tech Website!");
+
+}
+
+        // IA2
+        function showInfo(){
+            var x=document.getElementById("productInfo");
+
+            if(x.style.display=="none"){
+                // condition 1 where display is none
+                x.style.display="block";
+            }else{
+                // condition 2 where display is block
+                x.style.display="none";
+            }
+        }
+
+
+        // IA3
+                // image1
+                function hoverImage1(){
+
+document.getElementById("image1").src="Images/Member11.jpg";
+}
+function unhoverImage1(){
+document.getElementById("image1").src="Images/Member1.jpg";
+}  
+
+// image2
+function hoverImage2(){
+
+document.getElementById("image2").src="Images/Member22.jpg";
+}
+function unhoverImage2(){
+
+document.getElementById("image2").src="Images/Member2.jpg";
+}
+
+// image3
+function hoverImage3(){
+
+document.getElementById("image3").src="Images/Member33.jpg";
+}
+function unhoverImage3(){
+
+document.getElementById("image3").src="Images/Member3.jpg";
+}
+
+
+        // IA4
+        $(document).ready(function(){
+          $("#mySearch").on("keyup", function(){
+            var value=$(this).val().toLowerCase();
+            $("#myTable tr").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+
+            });
+
+          });
+
+        });
+
+
+        // IA5
+
+        // IA6
+
+        // IA7
+
+        // IA8
+        function validateForm(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            if (name==""||email==""){
+                alert("Name or/and Email is missing!!")
+                return false;
+            }
+        }
+
+
+        // IA9
+
+
+
+
+
+     </script>
+
+     
+
+
+     
+</head>
+<body>
+    <!-- HTML Content Here -->
+
+    <!-- IA91 -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"> M.R. Smart Washer </a>
+        <!-- Small Screen -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#button">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- Large Screen -->
+        <div class="collapse navbar-collapse" id="button">
+            <ul class="nav navbar-nav">
+                <li><a href="#about"> About </a> </li>
+                <li><a href="#product"> Product </a> </li>
+                <li><a href="#team"> Team </a> </li>
+                <li><a href="#features"> Features </a> </li>
+                <li><a href="#smart"> Smart </a> </li>
+                <li><a href="#customer"> Testimonials </a> </li>
+                <li><a href="#order"> Order </a> </li>
+                <li><a href="#contact"> Contact </a> </li>
+
+
+            </ul>
+            
+        </div>
+    </nav>
+
+    <!-- IA1 -->
+    <div class="container-company text-center" id="about">
+        <h2>  M.R. Tech </h2>
+        <p> M.R. Smart Washer </p>
+        <button onclick="welcomeMsg()">  Welcome!   </button>
+    
+    </div>
+
+    <!-- IA2 -->
+    <div class="container-product text-center" id="product">
+        <div class="row">
+
+            <!-- left column -->
+            <div class=""col-sm-8"> 
+                <h2>M.R. Smart Washer </h2>
+                <p id="productInfo" style="display: none;"> My Product is M.R. Smart Washer you can stay connected and in control anywhere with MR App. 
+                    You can get notifications when running low in detergent and fabric softener. 
+                    You can activate it using voice command. 
+                    Using a Smart washer can help you cut down trips to the laundry room. 
+                    This product is under our smart home appliances. 
+                    My product can be used at home. </p>
+                <button onclick="showInfo()">Product Information</button>
+            </div>
+
+            <!-- right column -->
+            <div class=""col-sm-4">
+                <img class="product" src="Images/product.jpg">
+                
+            </div>
+        
+        </div>
+
+    </div>
+
+    <!-- IA3 -->
+    <div class="container-team text-center" id="team">
+        <div class="row">
+
+            <h2> M.R. Tech Team </h2>
+
+            <!-- column1 -->
+            <div class="col-sm-4">
+            <div class="box">
+                <h3> CEO </h3>
+                <img class="member" id="image1" src="Images/Member1.jpg" onmouseover="hoverImage1()" onmouseout="unhoverImage1()">
+                <p> Mark Blan </p>
+            </div>
+            </div>
+
+            <!-- column2 -->
+            <div class="col-sm-4">
+            <div class="box">
+                <h3> CTO </h3>
+                <img class="member" id="image2" src="Images/Member2.jpg" onmouseover="hoverImage2()" onmouseout="unhoverImage2()">
+                <p> Raphael Blan </p>
+            </div>   
+            </div>
+
+
+            <!-- column3 -->
+            <div class="col-sm-4">
+            <div class="box">
+                <h3> CMO </h3>
+                <img class="member" id="image3" src="Images/Member3.jpg" onmouseover="hoverImage3()" onmouseout="unhoverImage3()">
+                <p> Anna Dorina Blan </p>
+            </div> 
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- IA4 -->
+    <div class="container-feature text-center" id="features">
+        <div class="row">
+          <h2> M.R. Smart Washer Features </h2>
+          
+          <! -- Search Bar -->
+          <input id="mySearch" type="text" class="search" placeholder="Search...">
+  
+          <! -- Table to present features -->
+  
+          <table>
+              <!-- Table Head -->
+              <thead>
+                 <tr> 
+                    <th> Items </th>
+                    <th>Features </th>
+                    <th>Description </th>
+                  </tr>
+              </thead>
+              <!-- Table Body -->
+  
+              <tbody id="myTable">
+                <tr>
+                    <td> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-fingerprint" viewBox="0 0 16 16">
+                      <path d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z"/>
+                      <path d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332c0 .409-.022.816-.066 1.221A.5.5 0 0 1 6 8.447c.04-.37.06-.742.06-1.115V7Zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8Zm-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329Z"/>
+                      <path d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334Zm.3 1.67a.5.5 0 0 1 .449.546 10.72 10.72 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.72 9.72 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z"/>
+                      <path d="M3.902 4.222a4.996 4.996 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 3.996 3.996 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556Zm6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705ZM3.68 5.842a.5.5 0 0 1 .422.568c-.029.192-.044.39-.044.59 0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.531 6.531 0 0 0 3.058 7c0-.25.019-.496.054-.736a.5.5 0 0 1 .568-.422Zm8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.51 10.51 0 0 0 .584-2.678.5.5 0 0 1 .54-.456Z"/>
+                      <path d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z"/>
+                    </svg></td>
+                    <td> Touch Screen </td>
+                    <td> Touch Screen to control the Smart Washer</td>
+                </tr>
+  
+                <tr>
+                    <td> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+                      <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                    </svg></td>
+                    <td> Button </td>
+                    <td> To control washing and drying </td>
+                </tr>
+  
+                <tr>
+                    <td> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-fan" viewBox="0 0 16 16">
+                      <path d="M10 3c0 1.313-.304 2.508-.8 3.4a1.991 1.991 0 0 0-1.484-.38c-.28-.982-.91-2.04-1.838-2.969a8.368 8.368 0 0 0-.491-.454A5.976 5.976 0 0 1 8 2c.691 0 1.355.117 1.973.332.018.219.027.442.027.668Zm0 5c0 .073-.004.146-.012.217 1.018-.019 2.2-.353 3.331-1.006a8.39 8.39 0 0 0 .57-.361 6.004 6.004 0 0 0-2.53-3.823 9.02 9.02 0 0 1-.145.64c-.34 1.269-.944 2.346-1.656 3.079.277.343.442.78.442 1.254Zm-.137.728a2.007 2.007 0 0 1-1.07 1.109c.525.87 1.405 1.725 2.535 2.377.2.116.402.222.605.317a5.986 5.986 0 0 0 2.053-4.111c-.208.073-.421.14-.641.199-1.264.339-2.493.356-3.482.11ZM8 10c-.45 0-.866-.149-1.2-.4-.494.89-.796 2.082-.796 3.391 0 .23.01.457.027.678A5.99 5.99 0 0 0 8 14c.94 0 1.83-.216 2.623-.602a8.359 8.359 0 0 1-.497-.458c-.925-.926-1.555-1.981-1.836-2.96-.094.013-.191.02-.29.02ZM6 8c0-.08.005-.16.014-.239-1.02.017-2.205.351-3.34 1.007a8.366 8.366 0 0 0-.568.359 6.003 6.003 0 0 0 2.525 3.839 8.37 8.37 0 0 1 .148-.653c.34-1.267.94-2.342 1.65-3.075A1.988 1.988 0 0 1 6 8Zm-3.347-.632c1.267-.34 2.498-.355 3.488-.107.196-.494.583-.89 1.07-1.1-.524-.874-1.406-1.733-2.541-2.388a8.363 8.363 0 0 0-.594-.312 5.987 5.987 0 0 0-2.06 4.106c.206-.074.418-.14.637-.199ZM8 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14Zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16Z"/>
+                    </svg></td>
+                    <td> Built in Fan </td>
+                    <td> To keep clothes fresh after wash</td>
+                </tr>
+  
+                
+  
+              </tbody>
+          </table>
+      </div>
+
+
+    <!-- IA5 -->
+    <div class="container-smart text-center" id="smart">
+        <div class="row">
+          <div class="carousel slide" id="slideshow" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- part 1: smart feature images -->
+                  <!-- feature 1 -->
+                  <div class="carousel-item active">
+                      <img class="slide-pic" src="Images/Smart1.jpg"
+                      <div class="carousel-caption">
+                        <h2>Touch Screen</h2>
+                      </div>
+                  </div>
+                  <!-- feature 2 -->
+                  <div class="carousel-item">
+                    <img class="slide-pic" src="Images/Smart2.jpg"
+                    <div class="carousel-caption">
+                      <h2>Button</h2>
+                    </div>
+                </div>
+                  <!-- feature 3 -->
+                  <div class="carousel-item">
+                    <img class="slide-pic" src="Images/Smart3.jpg"
+                    <div class="carousel-caption">
+                      <h2>Built in Fan</h2>
+                    </div>
+                </div>
+
+              <!-- part 2: buttons -->
+                  <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#slideshow">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+
+                  <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#slideshow">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+
+              <!-- part 3: indicators-->
+              <div class="carousel-indicators">
+                  <!-- indicator1 -->
+                  <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0"class="active">
+                  </button>
+                  <!-- indicator2 -->                 
+                  <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0"class="active">
+                  </button>
+                  <!-- indicator3 -->
+                  <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0"class="active">
+                  </button>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- IA6 -->
+    <div class="container-customer text-center" id="customer">
+        <div class="row">
+            <h2> Customer Testimonials</h2>
+            <!-- NavBar for buttons -->
+                <nav>
+                    <div class="nav nav-tabs nav-justified">
+                        <!-- button1 -->
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#menu1">
+                            Mark    
+                        </button> 
+                        <!-- button2 -->
+                        <button class="nav-link " data-bs-toggle="tab" data-bs-target="#menu2">
+                            Raphael    
+                        </button> 
+                        <!-- button3 -->
+                        <button class="nav-link " data-bs-toggle="tab" data-bs-target="#menu3">
+                            Dorina    
+                        </button> 
+                
+                    </div>
+
+                </nav>
+
+            <!-- Content -->
+                <div class="tab-content">
+
+                    <!-- Customer 1 -->
+                    <div class="tab-pane fade show active" id="menu1">
+                        <h3>Mark</h3>
+                        <img class="customer" src="Images/Customer1.jpg">
+                        <p> Great product! </p>
+
+                    </div>
+
+                    <!-- Customer 2 -->
+                    <div class="tab-pane fade show " id="menu2">
+                        <h3>Raphael</h3>
+                        <img class="customer" src="Images/Customer2.jpg">
+                        <p> Quiet than my old washer </p>
+
+                    </div>
+
+                    <!-- Customer 3 -->
+                    <div class="tab-pane fade show " id="menu3">
+                        <h3>Dorina</h3>
+                        <img class="customer" src="Images/Customer3.jpg">
+                        <p> Works great. Washer does not have delay </p>
+
+                    </div>
+
+                    
+
+                </div>
+
+        </div>
+    </div>
+
+    <!-- IA7 -->
+    <div class="container-order text-center" id="order">
+        <div class="row">
+            <div class="col-sm-12">
+                
+                <img class="order" src="Images/Order.jpg">
+                <h2> M.R. Smart Washer </h2>
+                <p> Do you want to pre-order it? Order Now! </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#link">
+                    Pre-Order Now!
+                 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Part -->\
+        <div class="modal fade" id="link">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Header-->
+                <div class="modal-header">
+                    <h3>Pre-Order Form</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+
+                    </button>
+
+                </div>
+
+                <!-- Body-->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label> M.R. Smart Washer: $1299 </label>
+                        <input type="number" class="form-control" placeholder="How many do you want?">
+
+
+                        <label> Email </label>
+                        <input type="text" class="form-control" placeholder="Your Email">
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary"> Pay </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- IA8 -->
+    <div class="container-contact text-center" id="contact">
+        <div class="row">
+
+            <h2> Contact Us </h2>
+            <!-- left column - contact info-->
+            <div class="col-sm-4">
+                <p> Email: mblan1@toromail.csudh.edu</p>
+                <p> Phone Number: 122-106-1206</p>
+                <p> Address: 2172 Los Angeles, California</p>
+            </div>
+            <!-- right column - from -->
+            <div class="col-sm-8">
+                <form>
+                    <!-- Row1 -->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input class="form-control" placeholder="Name" id="name">
+
+                        </div>
+                        <div class="col-sm-6">
+                            <input class="form-control" placeholder="Email" id="email">
+                        </div>
+                    </div>
+                    <!-- Row2 -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <textarea class="form-control" placeholder="Comment" row="5">
+
+                            </textarea>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- Row3 -->
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <label><input type="checkbox" name="gender" value="male">Male</label>
+                            <label><input type="checkbox" name="gender" value="female">Female</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label><input type="radio" name="membership" value="member">Member</label>
+                            <label><input type="radio" name="membership" value="non-member">Non-member</label>                 
+                        </div>
+                    </div>
+
+                    <!-- Row4 -->
+                    <div class="row">
+                        <label> Income Level</label>
+                        <select class="form-control" id="income-level">
+                            <option value="low">Low</option>
+                            <option value="middle">Middle</option>
+                            <option value="high">High</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Row5 - submit button -->
+                     <div class="row">
+                        <button class="btn btn-primary" onclick="validateForm()">Submit</button>
+
+
+                     </div>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- IA92 -->
+    <footer class="container-footer text-center">
+        <a href="#about">
+
+            <svg xmlns="http://www.w3.org/2000/svg" stroke="black" stroke-width="3" width="30" height="30" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg>
+
+        </a>
+        <br>
+        <br>
+        <p> Copyright &copy; M.R. Smart Washer, All Right Reserved. </p>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
